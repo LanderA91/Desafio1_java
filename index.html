@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Calculando el total</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="product-item">
+          <img
+            src="assets/img/15756327_1.jpg"
+            alt="Notebook Acer Swift"
+            class="product-img"
+          />
+          <h1 class="product-name">
+            Notebook Acer Swift 3 Intel i5 8GB RAM 256GB
+          </h1>
+          <div>
+            <input
+              type="text"
+              inputmode="numeric"
+              placeholder="Ingresar cantidad"
+              name=""
+              id="quantity"
+            />
+
+            <select name="" id="selectColor">
+              <option value="blue">Azul</option>
+              <option value="red">Rojo</option>
+              <option value="black">Negro</option>
+              <option value="purple">Púrpura</option>
+              <option value="pink">Rosado</option>
+            </select>
+          </div>
+          <h2>Precio unitario: $ <span id="price">420000</span></h2>
+          <div class="btn-container">
+            <buttton id="button">Calcular total</buttton>
+          </div>        
+        </section>
+        <section class="pricing-section">
+          <h2>Total: $ <span id="totalPrice">0</span></h2>
+          <h2>Cantidad: <span id="QuantityToBuy">0</span></h2>
+          <h2 class="color-section">
+            Color:
+            <div id="color-circle"></div>
+          </h2>
+        </section>
+      </div>
+    </main>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
